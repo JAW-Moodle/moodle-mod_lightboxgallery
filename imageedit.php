@@ -106,7 +106,7 @@ if ($editinstance->showthumb) {
     $table->attributes = array('style' => 'margin-left:auto;margin-right:auto;');
     $table->align = array('center', 'center');
     $table->size = array('*', '*');
-    $table->data[] = array('<img src="'.$image->get_thumbnail_url().
+    $table->data[] = array('<img src="'.$image->get_thumbnail_url().'?'.time().
                             '" alt="" /><br /><span title="'.$image->get_image_caption().'">'.
                             $image->get_image_caption().'</span>', $editinstance->output($image->get_image_caption()));
 } else {
